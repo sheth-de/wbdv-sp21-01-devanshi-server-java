@@ -1,0 +1,50 @@
+.small-font{
+    font-size: small;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.set-height{
+    height: 100%;
+}
+.format-heading{
+    text-align: center !important;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.white-color{
+    color: white;
+}
+.black-color{
+    color: black;
+}
+.green-color{
+    color: #28a745!important;
+}
+.all-border{
+    border-style: solid;
+    border-width: thin;
+}
+.nav-pills .nav-link.active {
+    color: white;
+    background-color: #28a745;
+}
+.nav-pills .nav-link{
+    background-color: #e6e6e6;
+}
+.list-group-item.active{
+    color: white;
+    background-color: #28a745;
+}
+.navbar-nav .nav-link.active {
+    color: white;
+    background-color: #32cd56;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #e6ffcc;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../style/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-xs-12 set-height border border-success rounded">
+            <div>
+            <i class="fa fa-user-circle-o fa-4x center" aria-hidden="true"></i>
+            <h2 class="format-heading">Profile</h2>
+            </div>
+<!--            <div class="alert alert-danger" role="alert">-->
+<!--                Danger Will Robinson-->
+<!--            </div>-->
+            <div class="alert alert-success" role="alert">
+                Yay!!!
+            </div>
+            <div class="mb-3 row">
+                <label
+                class="col-sm-2 col-form-label">
+                Username
+                </label>
+                <div class="col-sm-10">
+                <input type="text"
+                       readonly
+                       class="form-control"
+                       id="username"
+                       value="Alice"/>
+                </div>
+            </div>
+            <div class="mb-3 row">
+
+                <label for="inputPassword" class="col-sm-2 col-form-label">
+                Password
+                </label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+
+            </div>
+            <div class="mb-3 row">
+                <label for="phone"
+                       class="col-sm-2 col-form-label">
+                    Phone
+                </label>
+                <div class="col-sm-10">
+                    <input type="tel"
+                           class="form-control"
+                           id="phone"
+                           value="+1 617 2138 7850"
+                    />
+                </div>
+            </div>
+                <div class="mb-3 row">
+                <label for="email"
+                       class="col-sm-2 col-form-label">
+                    Email
+                </label>
+                <div class="col-sm-10">
+                    <input type="email"
+                           class="form-control"
+                           title="Please enter a valid email"
+                           value="alice@wonderland.com"
+                           id="email"/>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="role"
+                       class="col-sm-2 col-form-label">
+                    Role
+                </label>
+                <div class="col-sm-10">
+                    <select id="role" class="form-control" disabled="true">
+                        <option>Faculty</option>
+                        <option selected>Student</option>
+                        <option>Staff</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="dob"
+                       class="col-sm-2 col-form-label">
+                    DOB
+                </label>
+                <div class="col-sm-10">
+                    <input type="date"
+                           class="form-control"
+                           title="Please enter your DOB"
+                           value="2021-01-25"
+                           id="dob"/>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label
+                        class="col-sm-2 col-form-label">
+                </label>
+                <div class="col-sm-5">
+                    <a class="btn btn-light btn-block"
+                       href="../index.html">
+                        Update
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <a class="btn btn-light btn-block"
+                       href="../index.html">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+            <div class="mb-3 row">
+            <label
+                   class="col-sm-2 col-form-label">
+            </label>
+            <div class="col-sm-10">
+                <a class="btn btn-success btn-block"
+                   href="../index.html">
+                    Logout
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</body>
+</html>

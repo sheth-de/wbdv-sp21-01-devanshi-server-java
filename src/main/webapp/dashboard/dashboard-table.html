@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>CourseList</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../style/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-12 col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-success bg-success">
+                    <i class="fa fa-bars fa-2x white-color"></i>
+                    <div class="col-2 col-md-2 d-none d-sm-table-cell">
+                        <a class="navbar-brand white-color" href="#">Course Manager</a>
+                    </div>
+<!--                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                        <span class="navbar-toggler-icon"></span>-->
+<!--                    </button>-->
+                    <div class="col-8 col-md-8 col-sm-10" id="navbarNav">
+                        <ul class="navbar-nav navbar-nav nav-fill">
+                            <li>
+                            <input class="form-control col-lg-12 w-100" type="search" placeholder="New Course Title">
+<!--                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-1 col-md-1 col-sm-2">
+                    <i class="fa fa-plus-circle fa-2x white-color"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <h3>Today</h3>
+        <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col" class="d-none d-sm-table-cell">Title</th>
+                    <th scope="col" class="d-none d-sm-table-cell">Owned by</th>
+                    <th scope="col" class="d-none d-sm-table-cell">Last modified</th>
+                    <th scope="col" class="d-none d-sm-table-cell">&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <a href="../editor/editor.template.client.html" class="green-color">
+                        <i class="fa fa-file green-color"></i>
+                        CS5610
+                    </a>
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    me
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    1/21/2021
+                </td>
+                <td>
+                    <i class="fa fa-times pull-right"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="../editor/editor.template.client.html" class="green-color">
+                        <i class="fa fa-file green-color"></i>
+                        CS3200
+                    </a>
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    me
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    1/23/2021
+                </td>
+                <td>
+                    <i class="fa fa-times pull-right"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="../editor/editor.template.client.html" class="green-color">
+                        <i class="fa fa-file green-color"></i>
+                        CS4550
+                    </a>
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    me
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    1/22/2021
+                </td>
+                <td>
+                    <i class="fa fa-times pull-right"></i>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+        <h3>Yesterday</h3>
+        <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col" class="d-none d-sm-table-cell">Title</th>
+                <th scope="col" class="d-none d-sm-table-cell">Owned by</th>
+                <th scope="col" class="d-none d-sm-table-cell">Last modified</th>
+                <th scope="col" class="d-none d-sm-table-cell">&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <a href="../editor/editor.template.client.html" class="green-color">
+                        <i class="fa fa-file green-color"></i>
+                        CS5610
+                    </a>
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    me
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    1/21/2021
+                </td>
+                <td>
+                    <i class="fa fa-times pull-right"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="../editor/editor.template.client.html" class="green-color">
+                        <i class="fa fa-file green-color"></i>
+                        CS3200
+                    </a>
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    me
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    1/23/2021
+                </td>
+                <td>
+                    <i class="fa fa-times pull-right"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="../editor/editor.template.client.html" class="green-color">
+                        <i class="fa fa-file green-color"></i>
+                        CS4550
+                    </a>
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    me
+                </td>
+                <td scope="col" class="d-none d-sm-table-cell">
+                    1/22/2021
+                </td>
+                <td>
+                    <i class="fa fa-times pull-right"></i>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
