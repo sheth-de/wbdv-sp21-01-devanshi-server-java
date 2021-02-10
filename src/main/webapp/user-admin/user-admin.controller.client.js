@@ -19,13 +19,18 @@
     function createUser(user) {
         userService.createUser(user)
             .then(function (actualUser) {
-                users.push(user)
+                users.push(actualUser)
+                console.log("Actual user",actualUser)
                 renderUsers(users);
+
             })
+
+
     }
     
     function renderUsers(users) {
         tbody.empty();
+        console.log("Hi I am here render users",users)
         for (var u in users) {
             user = users[u];
             tbody
@@ -52,21 +57,28 @@
     }
 
     function deleteUser(event) {
+        renderUsers(users)
         var deleteBtn=jQuery(event.target)
         var theIndex = deleteBtn.attr("id")
         var theId = users[theIndex]._id
+        console.log("the attribute id",theIndex)
+        console.log("users are:",users)
+        console.log("the original id",theId)
         // console.log(theId)
         userService.deleteUser(theId)
             .then(function (status) {
-                users.splice(theId,1)
+                users.splice(theIndex,1)
                 renderUsers(users)
             })
     }
+
     var selectedUser = null
     function selectUser(event) {
+        renderUsers(users)
         var selectBtn = jQuery(event.target)
         var theId = selectBtn.attr("id")
         selectedUser = users.find(user => user._id === theId)
+        console.log(selectedUser)
         $usernameFld.val(selectedUser.username)
         $firstnameFld.val(selectedUser.firstname)
         $lastnameFld.val(selectedUser.lastname)
@@ -85,9 +97,14 @@
                 users[index] = selectedUser
                 renderUsers(users)
             })
+        $usernameFld.val("")
+        $usernameFld.val("")
+        $firstnameFld.val("")
+        $lastnameFld.val("")
+        $roleFld.val("")
     }
 
-    function init(){
+    function main(){
         $usernameFld=$(".wbdv-username-fld");
         $firstnameFld=$(".wbdv-firstName-fld");
         $lastnameFld=$(".wbdv-lastName-fld");
@@ -119,7 +136,11 @@
                 users = actualUsersFromServer
                 renderUsers(users)
             })
+        // jQuery(".wbdv-remove-btn")
+        //     .click(deleteUser)
+        // jQuery(".wbdv-select-btn")
+        //     .click(selectUser)
     }
 
 
-jQuery(init);
+jQuery(main);
