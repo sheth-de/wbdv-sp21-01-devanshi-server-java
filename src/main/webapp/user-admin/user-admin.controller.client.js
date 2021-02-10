@@ -43,8 +43,8 @@
                 <td class="wbdv-role">${user.role}</td>
                 <td class="wbdv-actions">
                     <span class="pull-right">
-                      <i class="fa-2x fa fa-times wbdv-remove-btn" id="${u}"></i>
-                      <i class="fa-2x fa fa-pencil wbdv-select-btn" id="${user._id}"></i>
+                      <button><i class="fa-2x fa fa-times wbdv-remove-btn" id="${u}"></i></button>
+                      <button><i class="fa-2x fa fa-pencil wbdv-select-btn" id="${user._id}"></i></button>
                     </span>
                 </td>
             </tr>`
