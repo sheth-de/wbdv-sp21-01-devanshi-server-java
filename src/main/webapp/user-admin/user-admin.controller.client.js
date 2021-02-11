@@ -38,7 +38,7 @@
                 .prepend(
                     `<tr class="wbdv-template wbdv-user">
                 <td class="wbdv-username">${user.username}</td>
-                <td class="wbdv-password  displaypassword">${user.password}</td>
+                <td class="wbdv-password  displaypassword"></td>
                 <td class="wbdv-first-name">${user.firstname}</td>
                 <td class="wbdv-last-name">${user.lastname}</td>
                 <td class="wbdv-role">${user.role}</td>
