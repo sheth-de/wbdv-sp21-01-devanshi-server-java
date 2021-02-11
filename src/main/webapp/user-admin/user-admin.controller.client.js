@@ -10,6 +10,7 @@
     var addCourseBtn;
     var updateBtn;
     var $usernameFld;
+    var $passwordFld;
     var $firstnameFld;
     var $lastnameFld;
     var $roleFld;
@@ -37,7 +38,7 @@
                 .prepend(
                     `<tr class="wbdv-template wbdv-user">
                 <td class="wbdv-username">${user.username}</td>
-                <td>&nbsp;</td>
+                <td class="wbdv-password  displaypassword">${user.password}</td>
                 <td class="wbdv-first-name">${user.firstname}</td>
                 <td class="wbdv-last-name">${user.lastname}</td>
                 <td class="wbdv-role">${user.role}</td>
@@ -80,6 +81,7 @@
         selectedUser = users.find(user => user._id === theId)
         console.log(selectedUser)
         $usernameFld.val(selectedUser.username)
+        $passwordFld.val(selectedUser.password)
         $firstnameFld.val(selectedUser.firstname)
         $lastnameFld.val(selectedUser.lastname)
         $roleFld.val(selectedUser.role)
@@ -88,6 +90,7 @@
     function updateUser() {
         console.log(selectedUser)
         selectedUser.username = $usernameFld.val()
+        selectedUser.password = $passwordFld.val()
         selectedUser.firstname = $firstnameFld.val()
         selectedUser.lastname = $lastnameFld.val()
         selectedUser.role = $roleFld.val()
@@ -98,6 +101,7 @@
                 renderUsers(users)
             })
         $usernameFld.val("")
+        $passwordFld.val("")
         $usernameFld.val("")
         $firstnameFld.val("")
         $lastnameFld.val("")
@@ -106,6 +110,7 @@
 
     function main(){
         $usernameFld=$(".wbdv-username-fld");
+        $passwordFld=$(".wbdv-password-fld");
         $firstnameFld=$(".wbdv-firstName-fld");
         $lastnameFld=$(".wbdv-lastName-fld");
         $roleFld=$(".wbdv-role-fld");
@@ -120,10 +125,12 @@
             function () {
                 createUser({
                     username: $usernameFld.val(),
+                    password: $passwordFld.val(),
                     firstname: $firstnameFld.val(),
                     lastname: $lastnameFld.val() ,
                     role: $roleFld.val()})
                     $usernameFld.val("")
+                    $passwordFld.val("")
                     $firstnameFld.val("")
                     $lastnameFld.val("")
                     $roleFld.val("")

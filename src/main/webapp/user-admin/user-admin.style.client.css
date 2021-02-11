@@ -11,3 +11,7 @@
     color: white;
     background-color: #28a745;
 }
+
+.displaypassword{
+    -webkit-text-security: circle;
+}
