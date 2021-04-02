@@ -1,7 +1,14 @@
 package com.example.wbdvsp2101devanshiserverjava.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="widgets")
 public class Widget {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String type;
     private Integer size;
     private String text;
@@ -15,6 +22,24 @@ public class Widget {
     private String cssClass;
     private String style;
     private String value;
+    private Boolean ordered;
+    private String src;
+
+    public Boolean getOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
+    }
+
+    public String getSrc() {
+        return src;
+    }
+
+    public void setSrc(String src) {
+        this.src = src;
+    }
 
     public Integer getWidgetOrder() {
         return widgetOrder;
@@ -137,3 +162,34 @@ public class Widget {
         this.name=name;
     }
 }
+
+/*
+    create table widget (
+       id bigint not null,
+        height integer,
+        size integer,
+        text varchar(255),
+        topic_id varchar(255),
+        type varchar(255),
+        width integer,
+        primary key (id)
+    ) engine=InnoDB
+ */
+
+/*
+create table widgets (
+       id bigint not null auto_increment,
+        height integer,
+        size integer,
+        text varchar(255),
+        topic_id varchar(255),
+        type varchar(255),
+        width integer,
+        primary key (id)
+    ) engine=InnoDB
+ */
+
+/*
+    alter table widgets
+       add column name varchar(255)
+ */
